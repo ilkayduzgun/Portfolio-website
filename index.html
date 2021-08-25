@@ -1,11 +1,172 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-  </head>
-  <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
-  </body>
-</html>
+    <!-- Required meta tags -->
+    <link rel="shortcut icon" href="Images/favicon.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ilkay Duzgun</title>
+    
+  <link rel="shortcut icon" href="resim/favicon.svg">
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    
+    </head>
+    <body>
+        <nav class="navbar">
+      <div class="nav-icon">
+        <a class="nav-icon" href="#"><img src="resim/ilkayLogo-04.svg"  alt=""></a>
+      </div>
+      <div class="nav-menu">
+        <a  href="#anasayfa">Anasayfa</a>
+        <a  href="#hakkinda">Hakkında</a>
+        <a  href="#calismalar">Çalışmalar</a>
+        <a  href="https://medium.com/@ilkay_duzgun_85533">Blog</a>
+        <a  href="#iletisim">İletişim</a>
+      </div>
+
+      
+      <div class="dropdown">
+        <button class="dropbtn"><i class="uil uil-align-justify"></i></button>
+        <div class="dropdown-content">
+          <a href="#anasayfa">Anasayfa</a>
+          <a href="#hakkinda">Hakkında</a>
+          <a href="#calismalar">Çalışmalar</a>
+          <a href="https://medium.com/@ilkay_duzgun_85533">Blog</a>
+          <a href="#iletisim">İletişim</a>
+        </div>
+      </div>
+      <div class="indir">
+      <a href="resim/cv.pdf"  target="_blank" class="indir-btn" ><i class="uil uil-file-download-alt"></i></a>
+      </div>
+      <div class="nav-btn">
+         <button><a href="resim/cv.pdf">Download CV</a></button>
+      </div>
+        </nav>
+
+        <div class="home-page" id="anasayfa">
+            <div class="home-main-div">
+          <div  class="home-text">
+            <h1 class="home-h1">Merhaba, ben <br> İlkay Düzgün</h1>
+              <p> Benim hakkımda daha fazla <br> bilgi edinmek için aşağı kaydırın!</p>
+           
+          </div>
+          <div class="image">
+              <img src="resim/homeIllustration.svg" alt="">
+          </div>
+</div>
+  
+        </div>
+
+      
+        <div class="about-page" id="hakkinda">
+          <div class="about-main-div">
+          <div class="about-image">
+            <img src="resim/aboutIllustration.svg" alt="">
+        </div>
+        <div  class="about-text">
+          <h1>Ben Kimim?</h1>
+          <p>
+            Mersin Üniversitesi Bilgisayar Mühendisliği bölümünde eğitimime devam ediyorum. Okul dışında full-stack developer olarak çalışmalar yapıyorum.Yeni şeyler öğrenmeyi seviyorum. Öğrendiklerimi uygulamak bana heyecan veriyor.
+          </p>
+        </div>       
+     </div>
+      </div>
+
+     
+
+      <div id="calismalar" class="works-page" >
+        <h1 >Çalışmalarım</h1>
+    <div class="card">
+      <img id="card1" class="card-img" src="resim/card1bg.png" alt="" style="width:100%; margin:auto;">
+      <div class="content">
+        <p>Fierheid oyun geliştirme ekibiyle birlikte 3D designer olarak çalışmalar yaptım.</p>
+      </div>
+     </div>
+      <div class="card">
+      <img class="card-img" src="resim/card2bg.png" alt="" style="width:100%; margin:auto;">
+      <div class="content">
+        <p>Birçok desktop uygulama geliştirdim</p>
+      </div>
+      </div>
+      <div class="card">
+      <img class="card-img" src="resim/card3bg.png" alt="" style="width:100%; margin:auto;" >
+     <div class="content">
+        <p>Şuanda full-stack developer olarak çalışmalar yapıyorum.</p>
+     </div>
+    </div>
+
+
+ <div class="skills-page"> 
+  <h1>Beceriler</h1>
+        <div class="skills-main-div">
+          <img id="html-img" src="resim/html.svg" alt="">
+          <img id="css-img" src="resim/css.svg" alt="">
+          <img id="js-img" src="resim/js.svg" alt="">
+          <img id="java-img" src="resim/java.svg" alt="">
+        </div>
+      </div>
+
+
+    <div class="form-page" id="iletisim">
+     
+      <div class="form-div">  
+        <form  action="" method="post">
+          <fieldset id="form-fieldset">
+             <legend style="text-align: center;"> <h1>Benimle İletişime Geçin!</h1></legend>
+          <fieldset id="text-fieldset">
+            <input placeholder="Adınız" type="text" tabindex="1" required autofocus>
+            <input id="form-text2" placeholder="Soyadınız" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset class="emaiil-fieldset">
+            <input placeholder="Email" type="email" tabindex="2" required>
+          </fieldset>   
+          <fieldset textarea-fieldset>
+            <textarea placeholder="Mesajınızı girin...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Gönder</button>
+          </fieldset>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+
+
+    <footer class="footer-div-main  " role="contentinfo" >
+      <div class="footer-middle">
+      <div class="footer-container">
+        <div class="text-div">
+        <ul class="text-small">
+          <li><a class=" footer-ul" href="#">2021 ©️ İlkay Düzgün, <br> Tüm Hakları Saklıdır.</a></li>
+         </ul>
+          </div>     
+       <div class="logo-div"> <a href="#anasayfa"> <img class="footer-logo" src="resim/ilkayLogo-04.svg"  alt=""></a></div>
+                  
+        </div>
+      <div class="footer-a">
+            <a href="https://www.linkedin.com/in/ilkayduzgun/"  target="_blank"  ><i class="uil uil-linkedin"></i> </a> 
+            <a href="https://github.com/ilkayduzgun"  target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://medium.com/@ilkay_duzgun_85533"  target="_blank"  ><i class="uil uil-medium-m"></i></a>
+             <a href="https://www.instagram.com/ilky.dzgn/"  target="_blank" ><i class="uil uil-instagram-alt"></i></a>
+          </div>
+
+      </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+        
+      $(document).ready(function(){
+          $("html").animate({scrollTop:"0"},10);
+            });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    </body>   
+    </html>
